@@ -1,0 +1,41 @@
+# Prerequisites
+*.d
+*.obj
+*.o
+
+# Compiled Object files
+*.slo
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Static Libraries
+*.lib
+*.a
+*.la
+*.lai
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+.ninja_deps
+.ninja_log
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
