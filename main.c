@@ -41,8 +41,33 @@ int main(void) {
 
     printWelcome();
 
-    printf("Hello, World! \n");
-    printf("你好，世界！\n"); // Test Chinese output
-    
+    printf("主菜单：\n1. 随机推荐\n2. 管理食物\n3. 查看历史\n4. 按分类筛选\n5. 清空历史\n6. 退出\n");
+    printf("请输入序号选择你的操作：\n");
+    char choice;
+    do {
+        choice = getchar();
+        while (getchar() != '\n');
+        printf("%c ", choice);
+        switch (choice) {
+            case '1':
+                printf("随机推荐\n");
+                break;
+            case '2':
+                printf("管理食物\n");
+                break;
+            case '3':
+                printf("查看历史\n");
+                break;
+            case '4':
+                printf("按分类筛选\n");
+                break;
+            case '5':
+                printf("清空历史\n");
+                break;
+            default:
+                printf("请重新输入\n");
+        }
+    } while (choice != '6');
+    printf("感谢使用！\n");
     return 0;
 }
